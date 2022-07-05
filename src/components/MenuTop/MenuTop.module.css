@@ -1,0 +1,19 @@
+.nav {
+    align-items: center;
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    height: 3em;
+    margin: 2em 0;
+    padding: 0 3em;
+    width: 100vw;
+}
+
+.nav li svg {
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+.nav :last-child svg {
+    font-size: 1.7em;
+}

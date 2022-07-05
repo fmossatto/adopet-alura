@@ -1,0 +1,30 @@
+.logo {
+    background-image: url('../../img/LogoWhite.svg');
+    background-repeat: no-repeat;
+    height: 2.85em;
+    margin: 6.25em auto 0 auto;
+    width: 11.8em;
+}
+
+.home h2 {
+    color: var(--white);
+    font-family: var(--ibm);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.home p {
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 15.5em;
+}
+
+.buttonContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}

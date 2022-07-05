@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;700&family=Poppins:wght@100;400;500;700&display=swap');
+
+:root {
+    --lightBackground: #e5e5e5;
+    --poppins: 'Poppins';
+    --ibm: 'IBM Plex Sans';
+    --blue: #3772ff;
+    --green: #36d6ad;
+    --red: #fc7071;
+    --redHover: #ff9d9e;
+    --cream: #fcf0e3;
+    --darkGray: #737380;
+    --gray: #bcbcbc;
+    --lightGray: #f6f6f6;
+    --white: #ffffff;
+    --placeholder: #bcbcbc;
+}

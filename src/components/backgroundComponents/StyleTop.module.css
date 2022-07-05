@@ -1,0 +1,11 @@
+.container {
+    width: 98%;
+    height: 18.5em;
+    background-image: url('../../img/StyleTop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

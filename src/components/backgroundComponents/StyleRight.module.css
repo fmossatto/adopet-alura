@@ -1,0 +1,10 @@
+.container {
+    background-image: url('../../img/Style-Side.svg');
+    background-repeat: no-repeat;
+    height: 25.9em;
+    position: absolute;
+    right: 0;
+    top: 12.5em;
+    width: 4.5em;
+    z-index: -1;
+}

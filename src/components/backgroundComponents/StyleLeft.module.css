@@ -1,0 +1,10 @@
+.container {
+    background-image: url('../../img/StyleLeftSmall.svg');
+    background-repeat: no-repeat;
+    height: 26.1em;
+    position: absolute;
+    left: 0;
+    bottom: 8.5em;
+    width: 5.3em;
+    z-index: -1;
+}
