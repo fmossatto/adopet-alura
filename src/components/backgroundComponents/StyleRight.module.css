@@ -1,10 +1,11 @@
 .container {
     background-image: url('../../img/Style-Side.svg');
     background-repeat: no-repeat;
-    height: 25.9em;
+    background-size: cover;
+    height: 23em;
     position: absolute;
     right: 0;
     top: 12.5em;
-    width: 4.5em;
+    width: 3.75em;
     z-index: -1;
 }

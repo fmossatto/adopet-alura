@@ -1,10 +1,11 @@
 .container {
     background-image: url('../../img/StyleLeftSmall.svg');
     background-repeat: no-repeat;
-    height: 26.1em;
+    background-size: contain;
+    height: 23em;
     position: absolute;
     left: 0;
-    bottom: 8.5em;
-    width: 5.3em;
+    bottom: 4.5em;
+    width: 4.25em;
     z-index: -1;
 }
