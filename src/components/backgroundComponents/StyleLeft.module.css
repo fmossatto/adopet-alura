@@ -2,10 +2,10 @@
     background-image: url('../../img/StyleLeftSmall.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 23em;
+    height: 20em;
     position: absolute;
     left: 0;
     bottom: 4.5em;
-    width: 4.25em;
+    width: 3.75em;
     z-index: -1;
 }

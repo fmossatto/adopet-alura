@@ -12,20 +12,20 @@
     width: 19.5em;
 }
 
-.register form {
+.login form {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 0.25em;
-    margin: 0 auto;
+    margin: 4em auto 0 auto;
     width: 90%;
 }
 
-.register form label {
+.login form label {
     color: var(--darkGray);
 }
 
-.register form input {
+.login form input {
     background-color: var(--lightGray);
     border: none;
     border-radius: 6px;
@@ -35,13 +35,19 @@
     width: 95%;
 }
 
-.register form input::placeholder {
+.login form input::placeholder {
     color: var(--placeholder);
     font-size: 0.75em;
     text-align: center;
 }
 
-.register form button {
-    margin-top: 0.5em;
+.forgotPassword {
+    color: var(--red);
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+
+.login form button {
+    margin-top: 1em;
     max-width: 9.25em;
 }

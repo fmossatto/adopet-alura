@@ -1,0 +1,24 @@
+.available {
+    padding: 0 0.5em;
+}
+
+.paragraph {
+    color: var(--blue);
+    margin: 4em auto 0 auto;
+    max-width: 14.5em;
+}
+
+.available .petList {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    margin: 2.5em 0 4em 0;
+    padding: 0;
+    width: 100%;
+}
+
+.available .petList .listItem {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,17 @@
+.button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+    cursor: pointer;
+    font-family: var(--poppins);
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.5em 0.25em;
+    width: 11.25em;
+}
+
+.button:hover {
+    background-color: var(--redHover);
+}
