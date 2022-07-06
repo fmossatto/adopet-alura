@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Cards from '../../components/Cards/Cards';
+import MenuTop from '../../components/MenuTop/MenuTop';
 import styles from './Available.module.css';
 
 const Available = () => {
@@ -63,6 +64,7 @@ const Available = () => {
 
     return (
         <div className={styles.available}>
+            <MenuTop />
             <p className={styles.paragraph}>Olá! Veja os amigos disponíveis para adoção!</p>
             <ul className={styles.petList}>
                 {pets.map((pet, index) => (

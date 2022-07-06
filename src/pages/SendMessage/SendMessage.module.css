@@ -1,0 +1,55 @@
+.container {
+    padding: 0 1em;
+}
+
+.paragraph {
+    color: var(--blue);
+    margin: 3.5em auto 0 auto;
+    max-width: 14.5em;
+}
+
+.container form {
+    align-items: flex-start;
+    background-color: var(--lightGray);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    margin: 1em auto 4em auto;
+    padding: 1em 1em;
+}
+
+.container form label {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.container form input,
+.container form textarea {
+    background-color: var(--white);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.75em;
+    padding: 0.75em;
+    width: calc(100% - 1.5em);
+}
+
+.container form input::placeholder,
+.container form textarea::placeholder {
+    color: var(--gray);
+    font-family: var(--poppins);
+    font-size: 0.75em;
+    text-align: left;
+}
+
+.container form textarea {
+    height: 4.5em;
+    resize: none;
+}
+
+.container form button {
+    align-self: center;
+    margin-top: 0.5em;
+    max-width: 9.25em;
+}

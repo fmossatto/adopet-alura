@@ -4,6 +4,10 @@ import { faComment } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Cards = ({ name, image, age, size, features, breed, city }) => {
+    const handleSendMessage = () => {
+        window.location.href = '/send-message';
+    };
+
     return (
         <div className={styles.cards}>
             <div className={styles.imageContainer}>
@@ -21,7 +25,7 @@ const Cards = ({ name, image, age, size, features, breed, city }) => {
                 </div>
                 <div className={styles.infoOwner}>
                     <p>{city}</p>
-                    <p>
+                    <p className={styles.sendMessage} onClick={handleSendMessage}>
                         <FontAwesomeIcon icon={faComment} /> Falar com responsável
                     </p>
                 </div>

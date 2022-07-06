@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import StyleLeft from '../../components/backgroundComponents/StyleLeft';
 import styles from './Register.module.css';
 //import StylePaws from '../../components/backgroundComponents/StylePaws';
@@ -12,7 +13,9 @@ const Register = () => {
 
     return (
         <div className={styles.register}>
-            <div className={styles.logo}></div>
+            <Link to="/">
+                <div className={styles.logo}></div>
+            </Link>
             <div className={styles.paragraphContainer}>
                 <p>Ainda não tem cadastro?</p>
                 <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados.</p>

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import StyleLeft from '../../components/backgroundComponents/StyleLeft';
 import ActionPrimaryButton from '../../components/ActionPrimaryButton/ActionPrimaryButton';
 import styles from './Login.module.css';
@@ -11,7 +12,10 @@ const Login = () => {
 
     return (
         <div className={styles.login}>
-            <div className={styles.logo}></div>
+            <Link to="/">
+                {' '}
+                <div className={styles.logo}></div>
+            </Link>
             <div className={styles.paragraphContainer}>
                 <p>Já tem conta? Faça seu login:</p>
             </div>

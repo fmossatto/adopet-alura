@@ -6,19 +6,23 @@ import MenuTop from './components/MenuTop/MenuTop';
 import Available from './pages/Available/Available';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import Perfil from './pages/Perfil/Perfil';
 import Register from './pages/Register/Register';
+import SendMessage from './pages/SendMessage/SendMessage';
 
 function App() {
     return (
         <div className="App">
             <BrowserRouter>
                 <StyleTop />
-                <MenuTop />
+                {/*<MenuTop />*/}
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/available" element={<Available />} />
+                    <Route path="/send-message" element={<SendMessage />} />
+                    <Route path="/perfil" element={<Perfil />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

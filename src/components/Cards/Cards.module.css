@@ -1,6 +1,8 @@
 .cards {
     background-color: rgba(246, 246, 246, 1);
+    border-radius: 10px;
     display: flex;
+    padding: 0.5em 0;
 }
 
 .imageContainer {
@@ -26,7 +28,7 @@
 .infoContainer h3 {
     color: var(--blue);
     font-size: 1em;
-    padding: 0 0.5em;
+    padding: 0 0.25em;
     text-align: start;
     margin: 0;
 }
@@ -37,7 +39,7 @@
     flex-direction: column;
     list-style: none;
     margin: 0;
-    padding: 0 0 0 0.5em;
+    padding: 0 0 0 0.25em;
 }
 
 .infoContainer ul li {
@@ -54,7 +56,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1.25em 0 0 0.5em;
+    padding: 1.25em 0 0 0.25em;
     max-width: 100%;
 }
 
@@ -66,4 +68,9 @@
 
 .infoOwner svg {
     color: var(--green);
+    font-size: 1.2em;
+}
+
+.infoOwner .sendMessage {
+    cursor: pointer;
 }

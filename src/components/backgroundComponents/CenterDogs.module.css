@@ -1,10 +1,10 @@
 .container {
     background-image: url('../../img/Dogs.svg');
     background-size: contain;
-    height: 14.5em;
+    height: 13.5em;
     position: absolute;
     bottom: 3em;
     left: calc(50vw - 6.25em);
-    width: 11.5em;
+    width: 10.8em;
     z-index: -1;
 }

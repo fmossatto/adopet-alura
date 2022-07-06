@@ -2,7 +2,7 @@
     background-image: url('../../img/LogoBlueSmall.svg');
     background-repeat: no-repeat;
     height: 2.2em;
-    margin: 4.75em auto 0 auto;
+    margin: 10em auto 0 auto;
     width: 8.9em;
 }
 
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.25em;
-    margin: 0 auto;
+    margin: 0 auto 4em auto;
     width: 90%;
 }
 
