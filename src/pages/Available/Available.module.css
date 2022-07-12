@@ -1,14 +1,19 @@
-.available {
+.container {
     padding: 0 0.5em;
 }
 
 .paragraph {
     color: var(--blue);
     margin: 4em auto 0 auto;
-    max-width: 14.5em;
+    width: 70%;
+    max-width: 30.5em;
 }
 
-.available .petList {
+.paragraph::after {
+    content: ' Veja os amigos disponíveis para adoção!';
+}
+
+.container .petList {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -18,7 +23,41 @@
     width: 100%;
 }
 
-.available .petList .listItem {
+.container .petList .listItem {
     margin: 0;
     padding: 0;
+}
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .container {
+        padding: 0 2em;
+    }
+
+    .logoContainer {
+        align-items: center;
+        display: flex;
+        gap: 1em;
+    }
+
+    .paragraph::after {
+        content: '\A Veja os amigos disponíveis para adoção!';
+        white-space: pre;
+    }
+
+    .paragraph {
+        margin: 6em auto 0 auto;
+    }
+
+    .container .petList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 2.5em 0 4em 0;
+        width: 100%;
+    }
+
+    .container .petList .listItem {
+        width: calc(50% - 0.5em);
+    }
 }

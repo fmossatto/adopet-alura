@@ -9,7 +9,7 @@ const MenuTop = () => {
         <nav className={styles.nav}>
             <ul className={styles.menuActions}>
                 <li className={styles.itemOne}>
-                    <Link to="/">
+                    <Link to="/available">
                         <FontAwesomeIcon icon={faHouse} />
                     </Link>
                 </li>

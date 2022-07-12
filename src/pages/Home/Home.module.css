@@ -1,3 +1,7 @@
+.container {
+    width: 100%;
+}
+
 .logo {
     background-image: url('../../img/LogoWhite.svg');
     background-repeat: no-repeat;
@@ -18,7 +22,8 @@
     font-size: 1em;
     font-weight: 400;
     margin: 0 auto;
-    width: 15.5em;
+    width: 70%;
+    max-width: 30.5em;
 }
 
 .buttonContainer {
@@ -27,4 +32,30 @@
     flex-direction: column;
     gap: 1em;
     margin-top: 1em;
+}
+
+.buttonContainer a {
+    width: 50%;
+    max-width: 22.5em;
+}
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .container .logoContainer {
+        margin: 2em 0 0 2em;
+    }
+
+    .logo {
+        background-size: contain;
+        height: 3.87em;
+        width: 15.6em;
+    }
+
+    .home h2 {
+        margin: 2.5em 0 1.5em 0;
+    }
+
+    .buttonContainer {
+        margin-top: 2.5em;
+    }
 }

@@ -5,7 +5,7 @@
 .paragraph {
     color: var(--blue);
     margin: 3.5em auto 0 auto;
-    max-width: 16em;
+    width: 90%;
 }
 
 .container .imageContainer {
@@ -79,6 +79,7 @@
 
 .container .formContainer form textarea {
     height: 4.5em;
+    font-family: var(--poppins);
     resize: none;
 }
 
@@ -86,4 +87,39 @@
     align-self: center;
     margin-top: 0.5em;
     max-width: 9.25em;
+}
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .logoContainer {
+        align-items: center;
+        display: flex;
+        gap: 1em;
+    }
+
+    .paragraph {
+        font-size: 1.125em;
+        margin: 6em auto 0 auto;
+        max-width: 70%;
+    }
+
+    .formContainer {
+        margin: 2.5em auto 4em auto;
+        width: 70%;
+    }
+
+    .container .formContainer form input,
+    .container .formContainer form textarea {
+        margin-bottom: 1.5em;
+    }
+
+    .container .formContainer form textarea {
+        height: 10em;
+        font-size: 0.875em;
+    }
+
+    .container .formContainer form input::placeholder,
+    .container .formContainer form textarea::placeholder {
+        font-size: 0.875em;
+    }
 }

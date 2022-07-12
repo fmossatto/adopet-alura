@@ -9,3 +9,10 @@
     left: 0;
     z-index: -1;
 }
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .container {
+        height: 25em;
+    }
+}

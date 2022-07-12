@@ -3,7 +3,7 @@
     border-radius: 6px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     color: var(--white);
-    font-weight: 500;
+    font-weight: 600;
     padding: 0.5em 0.25em;
     text-decoration: none;
     width: 11.25em;
@@ -11,4 +11,11 @@
 
 .button:hover {
     background-color: var(--redHover);
+}
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .button {
+        font-size: 1.125em;
+    }
 }

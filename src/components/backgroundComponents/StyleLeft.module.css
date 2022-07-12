@@ -9,3 +9,16 @@
     width: 3.75em;
     z-index: -1;
 }
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .container {
+        background-image: url('../../img/Style-Side.svg');
+        height: 34.5em;
+        left: auto;
+        right: 0;
+        top: 16.5em;
+        bottom: auto;
+        width: 5.62em;
+    }
+}

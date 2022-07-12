@@ -4,6 +4,8 @@ import MenuTop from '../../components/MenuTop/MenuTop';
 import styles from './Perfil.module.css';
 
 import userPhoto from '../../img/userPhoto.png';
+import LogoMenuTop from '../../components/LogoMenuTop/LogoMenuTop';
+import StyleRightOnlyLargeScreen from '../../components/backgroundComponents/StyleRightOnlyLargeScreen';
 
 const Perfil = () => {
     //Mudando a cor do background quando entrar na página...
@@ -13,7 +15,10 @@ const Perfil = () => {
 
     return (
         <section className={styles.container}>
-            <MenuTop />
+            <div className={styles.logoContainer}>
+                <LogoMenuTop />
+                <MenuTop />
+            </div>
             <p className={styles.paragraph}>
                 Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.
             </p>
@@ -37,6 +42,7 @@ const Perfil = () => {
                     <ActionPrimaryButton display="Salvar" />
                 </form>
             </div>
+            <StyleRightOnlyLargeScreen />
         </section>
     );
 };

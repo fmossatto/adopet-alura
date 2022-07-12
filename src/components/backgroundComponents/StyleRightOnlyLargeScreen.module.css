@@ -3,9 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 23em;
+    opacity: 0;
     position: absolute;
     right: 0;
-    top: 12.5em;
+    top: 16.5em;
     width: 3.75em;
     z-index: -1;
 }
@@ -14,6 +15,7 @@
 @media screen and (min-width: 48em) {
     .container {
         height: 34.5em;
+        opacity: 1;
         width: 5.62em;
     }
 }

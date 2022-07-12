@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import StyleLeft from '../../components/backgroundComponents/StyleLeft';
 import ActionPrimaryButton from '../../components/ActionPrimaryButton/ActionPrimaryButton';
 import styles from './Login.module.css';
+import LogoMenuTop from '../../components/LogoMenuTop/LogoMenuTop';
 
 const Login = () => {
     //Mudando a cor do background quando entrar na página...
@@ -11,11 +12,13 @@ const Login = () => {
     }, []);
 
     return (
-        <div className={styles.login}>
-            <Link to="/">
-                {' '}
-                <div className={styles.logo}></div>
-            </Link>
+        <div className={styles.container}>
+            <div className={styles.logoContainer}>
+                <LogoMenuTop />
+            </div>
+            <div className={styles.logo}>
+                <Link to="/"></Link>
+            </div>
             <div className={styles.paragraphContainer}>
                 <p>Já tem conta? Faça seu login:</p>
             </div>

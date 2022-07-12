@@ -4,6 +4,7 @@ import StyleLeft from '../../components/backgroundComponents/StyleLeft';
 import styles from './Register.module.css';
 //import StylePaws from '../../components/backgroundComponents/StylePaws';
 import ActionPrimaryButton from '../../components/ActionPrimaryButton/ActionPrimaryButton';
+import LogoMenuTop from '../../components/LogoMenuTop/LogoMenuTop';
 
 const Register = () => {
     //Mudando a cor do background quando entrar na página...
@@ -12,13 +13,16 @@ const Register = () => {
     }, []);
 
     return (
-        <div className={styles.register}>
-            <Link to="/">
-                <div className={styles.logo}></div>
-            </Link>
+        <div className={styles.container}>
+            <div className={styles.logoContainer}>
+                <LogoMenuTop />
+            </div>
+            <div className={styles.logo}>
+                <Link to="/"></Link>
+            </div>
             <div className={styles.paragraphContainer}>
                 <p>Ainda não tem cadastro?</p>
-                <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados.</p>
+                <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
             </div>
             <form>
                 <label htmlFor="email">Email</label>

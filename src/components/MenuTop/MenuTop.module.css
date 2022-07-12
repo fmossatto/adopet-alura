@@ -34,3 +34,10 @@ ul {
     padding: 0 1.5em 0 0;
     width: 50%;
 }
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .nav {
+        width: 80%;
+    }
+}

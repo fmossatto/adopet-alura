@@ -1,0 +1,14 @@
+.linkContainer {
+    display: none;
+}
+
+.linkContainer a img {
+    width: 8em;
+}
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .linkContainer {
+        display: flex;
+    }
+}

@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 1.25em 0 0 0.25em;
-    max-width: 100%;
+    width: 100%;
 }
 
 .infoOwner p {
@@ -73,4 +73,15 @@
 
 .infoOwner .sendMessage {
     cursor: pointer;
+}
+
+/*BREAKPOINT PARA TELAS DE TABLETS*/
+@media screen and (min-width: 48em) {
+    .cards {
+        width: 100%;
+    }
+
+    .infoContainer {
+        align-self: center;
+    }
 }

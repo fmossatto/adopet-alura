@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import ActionPrimaryButton from '../../components/ActionPrimaryButton/ActionPrimaryButton';
+import LogoMenuTop from '../../components/LogoMenuTop/LogoMenuTop';
 import MenuTop from '../../components/MenuTop/MenuTop';
+import StyleRightOnlyLargeScreen from '../../components/backgroundComponents/StyleRightOnlyLargeScreen';
 import styles from './SendMessage.module.css';
 
 const SendMessage = () => {
@@ -11,7 +13,10 @@ const SendMessage = () => {
 
     return (
         <section className={styles.container}>
-            <MenuTop />
+            <div className={styles.logoContainer}>
+                <LogoMenuTop />
+                <MenuTop />
+            </div>
             <p className={styles.paragraph}>
                 Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:
             </p>
@@ -30,6 +35,7 @@ const SendMessage = () => {
                 <textarea id="message" placeholder="Escreva sua mensagem"></textarea>
                 <ActionPrimaryButton display="Enviar" />
             </form>
+            <StyleRightOnlyLargeScreen />
         </section>
     );
 };
