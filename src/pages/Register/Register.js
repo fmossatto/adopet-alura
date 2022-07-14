@@ -13,32 +13,34 @@ const Register = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
-            <div className={styles.logoContainer}>
-                <LogoMenuTop />
+        <div className={styles.register}>
+            <div className={styles.container}>
+                <div className={styles.logoContainer}>
+                    <LogoMenuTop />
+                </div>
+                <div className={styles.logo}>
+                    <Link to="/"></Link>
+                </div>
+                <div className={styles.paragraphContainer}>
+                    <p>Ainda não tem cadastro?</p>
+                    <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+                </div>
+                <form>
+                    <label htmlFor="email">Email</label>
+                    <input type="text" id="email" placeholder="Escolha seu melhor email" />
+                    <label htmlFor="name">Nome</label>
+                    <input type="text" id="name" placeholder="Digite seu nome completo" />
+                    <label htmlFor="password">Senha</label>
+                    <input type="password" id="password" placeholder="Crie uma senha" />
+                    <label htmlFor="confirmPassword">Confirma sua senha</label>
+                    <input
+                        type="password"
+                        id="conformPassword"
+                        placeholder="Repita a senha criada acima"
+                    />
+                    <ActionPrimaryButton display="Cadastrar" />
+                </form>
             </div>
-            <div className={styles.logo}>
-                <Link to="/"></Link>
-            </div>
-            <div className={styles.paragraphContainer}>
-                <p>Ainda não tem cadastro?</p>
-                <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
-            </div>
-            <form>
-                <label htmlFor="email">Email</label>
-                <input type="text" id="email" placeholder="Escolha seu melhor email" />
-                <label htmlFor="name">Nome</label>
-                <input type="text" id="name" placeholder="Digite seu nome completo" />
-                <label htmlFor="password">Senha</label>
-                <input type="password" id="password" placeholder="Crie uma senha" />
-                <label htmlFor="confirmPassword">Confirma sua senha</label>
-                <input
-                    type="password"
-                    id="conformPassword"
-                    placeholder="Repita a senha criada acima"
-                />
-                <ActionPrimaryButton display="Cadastrar" />
-            </form>
             {/*<StylePaws />*/}
             <StyleLeft />
         </div>

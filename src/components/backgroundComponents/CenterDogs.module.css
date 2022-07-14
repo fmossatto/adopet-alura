@@ -18,3 +18,13 @@
         width: 16.3em;
     }
 }
+
+/*BREAKPOINT PARA TELAS DE NOTEBOOKS PEQUENAS COM ALTURA DE 864PX NO MÁXIMO*/
+@media screen and (min-width: 75em/*1200px*/) and (max-height: 54em /*864px*/) {
+    .container {
+        bottom: 2.5em;
+        height: 16em;
+        left: calc(50vw - 7.25em);
+        width: 12.8em;
+    }
+}

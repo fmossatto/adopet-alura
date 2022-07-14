@@ -12,28 +12,29 @@ const Login = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
-            <div className={styles.logoContainer}>
-                <LogoMenuTop />
-            </div>
-            <div className={styles.logo}>
-                <Link to="/"></Link>
-            </div>
-            <div className={styles.paragraphContainer}>
-                <p>Já tem conta? Faça seu login:</p>
-            </div>
-            <form>
-                <label htmlFor="email">Email</label>
-                <input type="text" id="email" placeholder="Insira seu email" />
-                <label htmlFor="password">Senha</label>
-                <input type="password" id="password" placeholder="Insira sua senha" />
-                <a href="/" className={styles.forgotPassword}>
-                    Esqueci minha senha.
-                </a>
+        <div className={styles.login}>
+            <div className={styles.container}>
+                <div className={styles.logoContainer}>
+                    <LogoMenuTop />
+                </div>
+                <div className={styles.logo}>
+                    <Link to="/"></Link>
+                </div>
+                <div className={styles.paragraphContainer}>
+                    <p>Já tem conta? Faça seu login:</p>
+                </div>
+                <form>
+                    <label htmlFor="email">Email</label>
+                    <input type="text" id="email" placeholder="Insira seu email" />
+                    <label htmlFor="password">Senha</label>
+                    <input type="password" id="password" placeholder="Insira sua senha" />
+                    <a href="/" className={styles.forgotPassword}>
+                        Esqueci minha senha.
+                    </a>
 
-                <ActionPrimaryButton display="Entrar" />
-            </form>
-            {/*<StylePaws />*/}
+                    <ActionPrimaryButton display="Entrar" />
+                </form>
+            </div>
             <StyleLeft />
         </div>
     );

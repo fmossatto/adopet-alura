@@ -90,3 +90,41 @@
         font-size: 0.875em;
     }
 }
+
+/*BREAKPOINT PARA TELAS GRANDES*/
+@media screen and (min-width: 75em) {
+    .container {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .container .logoContainer {
+        margin: 2em 0 0 0em;
+    }
+
+    .logo {
+        margin: 2em auto 0 auto;
+    }
+
+    .paragraphContainer {
+        font-size: 1.125em;
+        margin: 1.5em auto 1em auto;
+    }
+
+    .container form {
+        width: 40%;
+    }
+
+    .container form label {
+        font-size: 1.125em;
+        font-weight: 600;
+    }
+
+    .container form input {
+        margin-bottom: 1em;
+    }
+
+    .container form input::placeholder {
+        font-size: 1em;
+    }
+}

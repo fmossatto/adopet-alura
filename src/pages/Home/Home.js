@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
                 <div className={styles.logo}></div>
                 <h2>Boas-vindas!</h2>
-                <p>Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
+                <p></p>
                 <div className={styles.buttonContainer}>
                     <PrimaryButton display="Já tenho conta" route="/login" />
                     <PrimaryButton display="Quero me cadastrar" route="/register" />
