@@ -123,3 +123,24 @@
         font-size: 0.875em;
     }
 }
+
+/*BREAKPOINT PARA TELAS GRANDES*/
+@media screen and (min-width: 75em) {
+    .container {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .paragraph {
+        margin: 3em auto 0 auto;
+        max-width: 50%;
+    }
+
+    .container .formContainer {
+        width: 50%;
+    }
+
+    .container form {
+        gap: 0.25em;
+        margin: 2.5em auto 4em auto;
+    }
+}

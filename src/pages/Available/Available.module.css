@@ -46,6 +46,7 @@
     }
 
     .paragraph {
+        font-size: 1.125em;
         margin: 6em auto 0 auto;
     }
 
@@ -59,5 +60,24 @@
 
     .container .petList .listItem {
         width: calc(50% - 0.5em);
+    }
+}
+
+/*BREAKPOINT PARA TELAS GRANDES*/
+@media screen and (min-width: 75em) {
+    .container {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .paragraph {
+        margin: 3em auto 0 auto;
+    }
+
+    .paragraph::after {
+        content: ' Veja os amigos disponíveis para adoção!';
+    }
+
+    .container .petList .listItem {
+        width: calc(33% - 0.5em);
     }
 }

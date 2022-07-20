@@ -75,6 +75,10 @@
     cursor: pointer;
 }
 
+.infoOwner .sendMessage:hover svg {
+    color: red;
+}
+
 /*BREAKPOINT PARA TELAS DE TABLETS*/
 @media screen and (min-width: 48em) {
     .cards {

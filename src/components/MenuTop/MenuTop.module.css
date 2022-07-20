@@ -1,9 +1,10 @@
-ul {
-    list-style: none;
-}
-
 .nav {
     display: flex;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
 }
 
 .menuActions {
@@ -12,7 +13,6 @@ ul {
     gap: 3em;
     height: 3em;
     margin: 2em 0;
-    padding: 0 3em;
     width: 50%;
 }
 
@@ -21,7 +21,7 @@ ul {
     font-size: 1.5em;
 }
 
-.menuActions :last-child svg {
+.menuActions li:last-child svg {
     font-size: 1.7em;
 }
 
@@ -31,13 +31,9 @@ ul {
     height: 3em;
     justify-content: end;
     margin: 2em 0;
-    padding: 0 1.5em 0 0;
     width: 50%;
 }
 
 /*BREAKPOINT PARA TELAS DE TABLETS*/
 @media screen and (min-width: 48em) {
-    .nav {
-        width: 80%;
-    }
 }

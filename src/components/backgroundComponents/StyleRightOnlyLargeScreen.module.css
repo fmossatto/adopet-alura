@@ -19,3 +19,17 @@
         width: 5.62em;
     }
 }
+
+/*BREAKPOINT PARA TELAS GRANDES*/
+@media screen and (min-width: 75em) {
+    .container {
+        top: 12.5em;
+    }
+}
+
+/*BREAKPOINT PARA TELAS DE NOTEBOOKS PEQUENAS COM ALTURA DE 864PX NO MÁXIMO*/
+@media screen and (min-width: 75em/*1200px*/) and (max-height: 54em /*864px*/) {
+    .container {
+        top: 6.5em;
+    }
+}
