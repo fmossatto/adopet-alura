@@ -52,6 +52,12 @@
     text-align: center;
 }
 
+.container form small {
+    align-self: flex-start;
+    color: var(--red);
+    font-size: 0.75em;
+}
+
 .container form button {
     margin-top: 0.5em;
     max-width: 9.25em;

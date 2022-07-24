@@ -1,13 +1,8 @@
 import styles from './ActionPrimaryButton.module.css';
 
 const ActionPrimaryButton = ({ display }) => {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        window.location.href = '/available';
-    };
-
     return (
-        <button className={styles.button} onClick={handleSubmit}>
+        <button type="submit" className={styles.button}>
             {display}
         </button>
     );
