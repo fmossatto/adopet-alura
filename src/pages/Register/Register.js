@@ -10,6 +10,8 @@ import Snack from '../../components/MaterialUI/Snack';
 const Register = () => {
     //SnackBar
     const [open, setOpen] = useState(false);
+    const [severity, setSeverity] = useState('');
+    const [message, setMessage] = useState('');
 
     //Mudando a cor do background quando entrar na página...
     useEffect(() => {
@@ -24,12 +26,20 @@ const Register = () => {
         };
 
         let res = await fetchApi(req);
+        //veririca se a resposta do back-end já contem o email cadastrado...
+        if (res.message.includes('E-mail já cadastrado')) {
+            setMessage('E-mail já cadastrado em nosso sistema.');
+            setSeverity('error');
+            setOpen(true);
+        } else {
+            setMessage('Usuário cadastrado com sucesso, redirecionando para a tela de login!');
+            setSeverity('success');
+            setOpen(true);
 
-        setOpen(true);
-
-        setTimeout(() => {
-            window.location.href = '/login';
-        }, 3000);
+            setTimeout(() => {
+                window.location.href = '/login';
+            }, 3000);
+        }
     };
 
     const fetchApi = async (req) => {
@@ -66,7 +76,13 @@ const Register = () => {
             {/*<StylePaws />*/}
             <StyleLeft />
 
-            <Snack open={open} setOpen={setOpen} duration={3000} />
+            <Snack
+                open={open}
+                setOpen={setOpen}
+                duration={3000}
+                severity={severity}
+                message={message}
+            />
         </div>
     );
 };

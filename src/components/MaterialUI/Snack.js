@@ -1,7 +1,7 @@
 import React from 'react';
 import { Snackbar, Alert } from '@mui/material/';
 
-const Snack = ({ open, setOpen, duration }) => {
+const Snack = ({ open, setOpen, duration, severity, message }) => {
     let vertical = 'top';
     let horizontal = 'center';
 
@@ -16,8 +16,8 @@ const Snack = ({ open, setOpen, duration }) => {
             autoHideDuration={duration}
             onClose={handleClose}
         >
-            <Alert severity="success" sx={{ width: '100%' }}>
-                Usuário Cadastrado com sucesso, redirecionando para a tela de login!
+            <Alert severity={severity} sx={{ width: '100%' }}>
+                {message}
             </Alert>
         </Snackbar>
     );
